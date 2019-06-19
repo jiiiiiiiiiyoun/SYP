@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>ㅋreator Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+	<style>
+			*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		::selection{
+			background-color: #ffe05f;
+			color: white;
+			}
+		.empty{
+			height:60px;
+		}
+		.navbar {
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			box-shadow: 0px 1px 15px 0px rgb(130,130,130, 0.5);
+			background-color: white;
+			padding-left: 30px;
+			padding-right: 30px;			
+		}
+
+		.navbar .logo img{
+			width: 80px;
+			vertical-align: middle;
+		}
+		.navbar .logo{
+			line-height: 60px;
+			text-decoration: none;
+		}
+
+		.navbar .menu {
+			float: right;
+			line-height: 60px;	
+			vertical-align: middle;	
+		}
+		.navbar .menu li{
+			float: left;
+			list-style: none;
+		}
+		.navbar .menu a{
+		font-size: 14px;
+		text-decoration: none;
+		color: rgb(85,85,85);
+		}
+		.navbar .menu li:not(:last-child){
+			margin-right: 20px;
+		}
+		.navbar .menu a:hover{
+			font-weight: bold;
+		}
+		.hero-header{
+			width: 100%;
+			height: 630px;
+			background-image: url('image/Business-Card-Branding-Mockup.jpg');
+			background-size: cover;
+			background-position: center center;
+			text-align: center;
+		}
+		.col{
+			float: right;
+		}
+		.hero-header .hero-item{
+			/*background-color: orange;*/
+			width:40%;
+			height: 400px;
+			float: left;
+			background-image: url('image/card.png');
+		background-size: 450px;
+		background-repeat: no-repeat;
+		background-position: right top;
+		}
+		.hero-header .info{
+			/*background-color: green;*/
+			width:60%;
+			height: 400px;
+		}
+		.hero-header .introduction{
+			/*background-color: blue;*/
+			width:60%;
+			height: 180px;
+			position: relative;
+		}
+		.hero-header .introduction2{
+			/*background-color: red;*/
+			width:40%;
+			height: 180px;
+		}
+		.hero-header .footer{
+			width: 100%
+			height: 50px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.footer{
+			height: 50px;
+			text-align: center;
+		}
+		.hero-header .footer p {
+			font-size: 12px;
+			vertical-align: middle;
+			color: #808184;
+			float: right;
+			padding-right: 30px;
+			float: right;
+			padding-top: 5px;
+		}
+		.hero-header .hero-item p{
+			text-align: left;
+			padding-left: 80px;
+			padding-top: 60px;
+			line-height: 23px;
+			font-size: 15px;
+			color: #686868;
+			font-weight: 400;
+		}
+		.hero-header .introduction .link{
+			position: absolute;
+			right: 30px;
+			bottom: 0px;
+		}
+		 .introduction a img{
+			width: 20px;
+		}
+		.introduction .link a:not(:last-child){
+			margin-right: 10px;
+		}
+		.hero-item #more{
+		margin-left: 80px;
+		margin-top: 13px;
+		text-decoration: none;
+		color: #929497;
+		float: left;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		}
+		.hero-item #more:hover{
+			color:#1e448b;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a class="logo" href="main.html"><img src="image/logo2.png"></a>
+
+		<ul class="menu">
+			<li class="menu-item"><a href="main.html">Home</a></li>
+			<li class="menu-item"><a href="projects.html">Projects</a></li>
+			<li class="menu-item"><a href="aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class="empty"></div>
+
+	<div class="hero">
+		<div class="hero-header col">
+			<div class="helper"></div><div class="hero-item">
+					<p>I’m Sunyoung Choi,<br>
+			 a Korean Designer specialized in<br>
+			 UX service design and Branding,<br>
+			 Graphic  Design</p>
+			<a id="more" href="aboutme.html">MORE</a>
+			</div>		
+
+		<div class="info col">
+			<div class="helper"></div><div class="info-container">
+			</div>
+		</div>
+		<div class="introduction col">
+			<div class="helper"></div>
+			<div class="link">
+			<a href="https://www.facebook.com/profile.php?id=100003485697880" target="_black"><img src="image/facebook.png"></a>
+			<a href="https://www.instagram.com/feelsobreezy_/?hl=ko" target="_black"><img src="image/insta.png"></a>
+			<a href="https://twitter.com" target="_black"><img src="image/twitter.png"></a></div>
+		</div>
+		<div class="introduction2 col"></div>
+		<div class="footer">
+			<p class="footer">Copyright©2019 Sunyoung Choi. All rights reserved.</p>
+		</div>
+	</div>
+
+</body>
+</html>

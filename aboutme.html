@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>ㅋreator Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+	<style>
+			*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		::selection{
+			background-color: #ffe05f;
+			color: white;
+			}
+		.empty{
+			height:60px;
+		}
+		.navbar {
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			box-shadow: 0px 1px 15px 0px rgb(130,130,130, 0.5);
+			background-color: white;
+			padding-left: 30px;
+			padding-right: 30px;			
+		}
+
+		.navbar .logo img{
+			width: 80px;
+			vertical-align: middle;
+		}
+		.navbar .logo{
+			line-height: 60px;
+			text-decoration: none;
+		}
+
+		.navbar .menu {
+			float: right;
+			line-height: 60px;	
+			vertical-align: middle;	
+		}
+		.navbar .menu li{
+			float: left;
+			list-style: none;
+		}
+		.navbar .menu a{
+		font-size: 14px;
+		text-decoration: none;
+		color: rgb(85,85,85);
+		}
+		.navbar .menu li:not(:last-child){
+			margin-right: 20px;
+		}
+		.navbar .menu a:hover{
+			font-weight: bold;
+		}
+		.hero-header{
+			width: 100%;
+			height: 630px;
+			background-image: url('image/Business-Card-Branding-Mockup.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
+		.col{
+			float: right;
+		}
+		.hero-header .hero-item{
+			/*background-color: orange;*/
+			width:40%;
+			height: 400px;
+			float: left;
+		}
+		.hero-header .info{
+			/*background-color: green;*/
+			width:60%;
+			height: 400px;
+		}
+		.hero-header .introduction{
+			/*background-color: blue;*/
+			width:60%;
+			height: 180px;
+			position: relative;
+		}
+		.hero-header .introduction2{
+			/*background-color: red;*/
+			width:40%;
+			height: 180px;
+		}
+		.hero-header .footer{
+			width: 100%
+			height: 50px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.footer{
+			height: 50px;
+			text-align: center;
+		}
+		.hero-header .footer p {
+			font-size: 12px;
+			line-height: 40px;
+			vertical-align: middle;
+			color: #808184;
+			float: right;
+			padding-right: 30px;
+			float: right;
+		}
+		.hero-header .hero-item p{
+			text-align: left;
+			padding-left: 80px;
+			padding-top: 60px;
+			line-height: 23px;
+			font-size: 15px;
+			color: #686868;
+			font-weight: 700;
+		}
+		.hero-header .introduction .link{
+			position: absolute;
+			right: 30px;
+			bottom: 0px;
+		}
+		 .introduction a img{
+			width: 20px;
+		}
+		.introduction .link a:not(:last-child){
+			margin-right: 10px;
+		}
+		.hero-item #more{
+		margin-left: 80px;
+		margin-top: 13px;
+		text-decoration: none;
+		color: #929497;
+		float: left;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		}
+		.hero-item #more:hover{
+			color:#1e448b;
+		}
+		.contents{
+			width: 842px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		.pagename{
+			margin-top: 80px;
+			width: 170px;
+		}
+		#pagename2{
+			margin-top: 40px;
+			width: 155px;
+		}
+		.contents .profile-image{
+			margin-top: 5px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/프로필2.jpg');
+			background-size: cover;	
+		}
+		.contents .selfbranding-image{
+			margin-top: 20px;
+			width: 100%;
+			height: 492px;
+			background-image: url('image/selfbranding-19.png');
+			background-size: cover;	
+		}
+		.profile-info h5{
+			padding top: 20px;
+			color:#1e448b;
+			font-size: 17px;
+		}
+		.profile-info p{
+			margin-top: 5px;
+			font-size: 15px;
+			line-height: 28px;
+		}
+		.profile-info{
+			margin-top: 30px;
+		}
+		.fontcolor{
+			color:#929497;
+		}
+		.font-size{
+			font-size: 13px;
+		}
+		#skill{
+			margin-top: 10px;
+		}
+		.border{
+		margin-top: 60px;
+		width: 100%;
+		border-top: 1.2px solid #E1E1E1;
+		}
+		#selfbranding{
+			margin-top: 13px;
+			margin-bottom: 50px;
+			text-align: justify;
+			font-size: 15px;
+			padding: 5px;
+			line-height: 28px;
+		}
+		.footer{
+			height: 40px;
+			/*background-color: #404041;*/
+		}
+		.footer p{
+			height: 50px;
+			font-size: 12px;
+			line-height: 30px;
+			vertical-align: middle;
+			color: #808184;
+			padding-right: 30px;
+			text-align: center;
+
+		}
+		.link{
+			text-align: center;
+			padding-top: 5px;
+		}
+		.link a img{
+			width: 20px;
+		}
+		.link a:not(:last-child){
+			margin-right: 10px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a class="logo" href="main.html"><img src="image/logo2.png"></a>
+
+		<ul class="menu">
+			<li class="menu-item"><a href="main.html">Home</a></li>
+			<li class="menu-item"><a href="projects.html">Projects</a></li>
+			<li class="menu-item"><a href="aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class="empty"></div>
+	<div class="contents">
+		<img class="pagename" src="image/about-05.png">
+		<div class="profile-image"></div>
+		<div class="profile-info">
+			<h5>Profile</h5>
+			<p>최선영 / Sunyoung Choi
+				<br>forever_young23@naver.com
+				<br>010.2503.7342</p>
+		</div>
+		<div class="profile-info">
+			<h5>Education</h5>
+			<p>한국산업기술대학교 디자인학부
+				<br>융합디자인 학과</p>
+		</div>
+		<div class="profile-info">
+			<h5>Experience</h5>
+			<p><span class="fontcolor">17.06 - 17.08</span>　　　SOFTHAEVEN 현장 실습
+           <br> 　　　　　　　　　<span class="font-size">- 어플 콘텐츠 기획 및  UI 디자인</p></span>
+           <p><span class="fontcolor">17.09 - 18.02</span>　　　디자인 연합 동아리 D:SENSE
+           <br> 　　　　　　　　　<span class="font-size">- HUB : 우리가 모였을 때 전시 기획 및 참여</p></span>
+           	<p><span class="fontcolor">17.09 - 18.03</span>　　　디자인 플렛폼 ARTISPOON 근무
+           <br> 　　　　　　　　　<span class="font-size">- 상품 기획 및 디자인 작업</p></span>
+           <p><span class="fontcolor">19. 01 - 19.11</span>　　　창업 동아리 GERO FACTORY
+           <br> 　　　　　　　　　<span class="font-size">- 창업 아이디어 공모전 참여 및 수상</p></span>
+		</div>
+		<div class="profile-info">
+			<h5>Awards</h5>
+			<p><span class="fontcolor">2018 03</span>　　교내 P2P 경진 대회
+			<br><span class="fontcolor">2018 05</span>　　이마트24 리브랜딩 공모전
+			<br><span class="fontcolor">2019 02</span>　　창업 경진 대회</p>
+		</div>
+		<div class="profile-info last">
+			<h5>SKill</h5>
+			<img id="skill"src="image/skill-06.png" width="200">
+		</div>
+		<div class="border">　</div>
+		<img class="pagename" id="pagename2" src="image/selfbranding-05.png">
+		<div class="selfbranding-image"></div>
+		<p id="selfbranding">[ㅋreate Designer] 는 재미있는, 즐거운 감정을 표현할 때 사용하는 인터넷 용어인 ‘ㅋㅋ’ 과 창조하다를 의미하는 ‘Create’를 합성한 표현입니다. 디자인을 함에 있어서 사람들에게 사랑받을 수 있는 매력적인 요소인 기대하지 않은 가치, 즉 재미 또한 놓치지 않는 디자인을 만들고자 하는 철학을 담고있습니다.</p>
+	<div class="border">　</div>
+	</div>
+
+	<div class="footer">
+		<div class="link">
+		<a href="https://www.facebook.com/profile.php?id=100003485697880" target="_black"><img src="image/facebook.png"></a>
+			<a href="https://www.instagram.com/feelsobreezy_/?hl=ko" target="_black"><img src="image/insta.png"></a>
+			<a href="https://twitter.com" target="_black"><img src="image/twitter.png"></a></div>
+			<p class="footer">Copyright©2019 Sunyoung Choi. All rights reserved.</p>
+		</div>
+</body>
+</html>

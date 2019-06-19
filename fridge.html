@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>ㅋreator Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+	<style>
+			*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		::selection{
+			background-color: #ffe05f;
+			color: white;
+			}
+	.empty{
+			height:60px;
+		}
+		.navbar {
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			box-shadow: 0px 1px 15px 0px rgb(130,130,130, 0.5);
+			background-color: white;
+			padding-left: 30px;
+			padding-right: 30px;			
+		}
+
+		.navbar .logo img{
+			width: 80px;
+			vertical-align: middle;
+		}
+		.navbar .logo{
+			line-height: 60px;
+			text-decoration: none;
+		}
+
+		.navbar .menu {
+			float: right;
+			line-height: 60px;	
+			vertical-align: middle;	
+		}
+		.navbar .menu li{
+			float: left;
+			list-style: none;
+		}
+		.navbar .menu a{
+		font-size: 14px;
+		text-decoration: none;
+		color: rgb(85,85,85);
+		}
+		.navbar .menu li:not(:last-child){
+			margin-right: 20px;
+		}
+		.navbar .menu a:hover{
+			font-weight: bold;
+		}
+		.hero-header{
+			width: 100%;
+			height: 630px;
+			background-image: url('image/Business-Card-Branding-Mockup.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
+		.col{
+			float: right;
+		}
+		.hero-header .hero-item{
+			/*background-color: orange;*/
+			width:40%;
+			height: 400px;
+			float: left;
+		}
+		.hero-header .info{
+			/*background-color: green;*/
+			width:60%;
+			height: 400px;
+		}
+		.hero-header .introduction{
+			/*background-color: blue;*/
+			width:60%;
+			height: 180px;
+			position: relative;
+		}
+		.hero-header .introduction2{
+			/*background-color: red;*/
+			width:40%;
+			height: 180px;
+		}
+		.hero-header .footer{
+			width: 100%
+			height: 50px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.footer{
+			height: 50px;
+			text-align: center;
+		}
+		.hero-header .footer p {
+			font-size: 12px;
+			line-height: 40px;
+			vertical-align: middle;
+			color: #808184;
+			float: right;
+			padding-right: 30px;
+			float: right;
+		}
+		.hero-header .hero-item p{
+			text-align: left;
+			padding-left: 80px;
+			padding-top: 60px;
+			line-height: 23px;
+			font-size: 15px;
+			color: #686868;
+			font-weight: 700;
+		}
+		.hero-header .introduction .link{
+			position: absolute;
+			right: 30px;
+			bottom: 0px;
+		}
+		 .introduction a img{
+			width: 20px;
+		}
+		.introduction .link a:not(:last-child){
+			margin-right: 10px;
+		}
+		.hero-item #more{
+		margin-left: 80px;
+		margin-top: 13px;
+		text-decoration: none;
+		color: #929497;
+		float: left;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		}
+		.hero-item #more:hover{
+			color:#1e448b;
+		}
+		.contents{
+			width: 842px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		.pagename{
+			margin-top: 80px;
+			width: 170px;
+		}
+		#pagename2{
+			margin-top: 40px;
+			width: 155px;
+		}
+		.contents .profile-image{
+			margin-top: 5px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/프로필2.jpg');
+			background-size: cover;	
+		}
+		.contents .selfbranding-image{
+			margin-top: 20px;
+			width: 100%;
+			height: 492px;
+			background-image: url('image/selfbranding-19.png');
+			background-size: cover;	
+		}
+		.profile-info h5{
+			padding top: 20px;
+			color:#1e448b;
+			font-size: 17px;
+		}
+		.profile-info p{
+			margin-top: 5px;
+			font-size: 15px;
+			line-height: 28px;
+		}
+		.profile-info{
+			margin-top: 30px;
+		}
+		.fontcolor{
+			color:#929497;
+		}
+		.font-size{
+			font-size: 13px;
+		}
+		#skill{
+			margin-top: 10px;
+		}
+		.border{
+		margin-top: 60px;
+		width: 100%;
+		border-top: 1.2px solid #E1E1E1;
+		}
+		#selfbranding{
+			margin-top: 13px;
+			margin-bottom: 50px;
+			text-align: justify;
+			font-size: 15px;
+			padding: 5px;
+			line-height: 28px;
+		}
+		.footer{
+			height: 40px;
+			/*background-color: #404041;*/
+		}
+		.footer p{
+			height: 50px;
+			font-size: 13px;
+			line-height: 30px;
+			vertical-align: middle;
+			color: #808184;
+			padding-right: 30px;
+			text-align: center;
+
+		}
+		.link{
+			text-align: center;
+			padding-top: 15px;
+		}
+		.link a img{
+			width: 20px;
+		}
+		.link a:not(:last-child){
+			margin-right: 10px;
+		}
+		.last{
+			outline-style: under 1px solid #e6e7e8;
+			outline: under 1px solid #e6e7e8;
+		}
+		.space{
+			width: 100%;
+		}
+		.space1{
+		/*background-color: orange;*/
+		width: 20%;
+		height: 530px;
+		float: left;
+		background-image: url('image/card.png');
+		background-size: cover;
+		background-position: center center;
+		}
+		.space2{
+		/*background-color: green;*/
+		width: 80%;
+		height: 530px;
+		float: right;
+		}
+		#pagename3{
+		margin-top: 80px;
+		width: 95px;
+		float: right;
+		padding-right: 30px;
+		}
+		.border2{
+		margin-top: 35px;
+		width: 20px;
+		border-top: 1.8px solid #686868;
+		float: right;
+		margin-right: 30px;
+		clear: right;
+		}
+		.type{
+			float: right;
+			clear: right;
+			text-align: right;
+			padding-right: 30px;
+			padding-top: 20px;
+			line-height: 40px;
+			font-size: 17px;
+			color:#686868;
+		}
+		.projectsimage{
+			margin-top: 80px;
+			width: 455px;
+			height: 300px;
+			background-color: blue;
+			float: right;
+			margin-right: 30px;
+
+		}
+		.projectsimage.image2{
+			margin-right: 10px;
+		}
+		.projectsimage2{
+			margin-top: 10px;
+			width: 300px;
+			height: 200px;
+			background-color: blue;
+			float: right;
+			margin-bottom: 80px;
+		}
+		.projectsimage2{
+			margin-right: 10px;
+		}
+		.projectsimage2.image3{
+			margin-right: 30px;
+		}
+		.clearfix{
+			height: 50px;
+			clear:both;
+		}
+		.footer{
+			height: 40px;
+			/*background-color: #404041;*/
+		}
+		.footer p{
+			height: 50px;
+			font-size: 12px;
+			line-height: 30px;
+			vertical-align: middle;
+			color: #808184;
+			padding-right: 30px;
+			text-align: center;
+
+		}
+		.link{
+			text-align: center;
+			padding-top: 5px;
+		}
+		.link a img{
+			width: 20px;
+		}
+		.link a:not(:last-child){
+			margin-right: 10px;
+		}
+		.projectsimage.image2{
+		background-image: url('image/simple-mockups.jpg');
+		background-size: cover;
+		background-position: center center;
+		}
+		.projectsimage.image1{
+		background-image: url('image/99.jpg');
+		background-size: cover;
+		background-position: center center;
+		}
+		.projectsimage2.image3{
+		background-image: url('image/앨범커버 목업1.jpg');
+		background-size: cover;
+		background-position: center center;
+		}
+		.projectsimage2.image5{
+		background-image: url('image/당신의하루.jpg');
+		background-size: cover;
+		background-position: center center;
+		}
+		.projectsimage2.image4{
+		background-image: url('image/00.jpg');
+		background-size: cover;
+		background-position: center center;
+		}
+		.border3{
+		margin-top: 60px;
+		width: 100%;
+		border-top: 1.2px solid #f3f3f3;
+		}
+		.fridge a:hover{
+		opacity: 20;
+		}
+		.project-image{
+			margin-top: 10px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/fridge-main-05.jpg');
+			background-size: cover;	
+		}
+		#pagename4{
+			width: 60px;
+			margin-bottom: 8px;
+		}
+		.project-info h4{
+			color:#404041;
+			font-size: 17px;
+		}
+		.project-info h5{
+			margin-top: -8px;
+			color:#1e448b;
+			font-size: 14px;
+		}
+		.project-info p{
+			margin-top: -10px;
+			font-size: 13px;
+			line-height: 28px;
+		}
+		.project-info{
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+		.fridge-fontcolor{
+			color:#2db784;
+		}
+		.infomation{
+			float: left;
+		}
+		.infomation h5{
+			float: left;
+			line-height: 15px;
+		}
+		.infomation p {
+			float: left;
+			margin-right: 20px;
+			margin-left: 10px;
+				line-height: 15px;
+		}
+		.project-image2{
+			margin-top: 20px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/fridge-background.jpg');
+			background-size: cover;	
+		}
+		.background h5{
+			color:#1e448b;
+			font-size: 14px;
+			margin-top: 60px;
+		}
+		.explanation p{
+			margin-top: 10px;
+			font-size: 13px;
+			line-height: 28px;
+			margin-bottom: 20px;
+		}
+		.explanation h5{
+			color:#1e448b;
+			font-size: 14px;
+			margin-top: 20px;
+
+		}
+		.clearfix2{
+			clear: both;
+		}
+		.project-image3{
+			margin-top: 20px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/포트폴리오 최종-06.jpg');
+			background-size: cover;	
+		}
+		.designconcept h5{
+			color:#1e448b;
+			font-size: 14px;
+			margin-top: 60px;
+		}
+		.project-image4{
+			margin-top: 20px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/wireframe.jpg');
+			background-size: cover;	
+		}
+		.project-image5{
+			margin-top: 50px;
+			width: 100%;
+			height: 595.28px;
+			background-image: url('image/simple-mockups.jpg');
+			background-position: center center;
+			background-size: cover;	
+			margin-bottom: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a class="logo" href="main.html"><img src="image/logo2.png"></a>
+
+		<ul class="menu">
+			<li class="menu-item"><a href="main.html">Home</a></li>
+			<li class="menu-item"><a href="projects.html">Projects</a></li>
+			<li class="menu-item"><a href="aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class="empty"></div>
+	<div class="contents">
+		<img class="pagename" id="pagename4"src="image/fridge-05.png"><h4>식자재 공유 서비스 <span class="fridge-fontcolor">FRIDGE</span></h4>
+		<div class="project-info">
+			<div class="infomation">
+			<h5>프로젝트 기간</h5>
+			<p>17. 09 - 18. 03 　l </p>
+			<h5>참여인원</h5>
+			<p>Team project (4명)　 l 
+			</p>
+			<h5>프로젝트 참여도</h5>
+			<p>80% (기획 + 디자인) </p>
+		</div>
+		<div class="clearfix2"></div>
+		</div>
+		<div class="project-image"></div>
+		<div class="explanation">
+			<h5>Explanation</h5>
+		<p >‘FRIDGE’는 불필요한 식자재로 인해 발생되는 음식물 쓰레기 문제를 개선하기 위한 ‘식자재 공유 서비스’ 이다.
+			공유 냉장고와 연동되는 어플을 통해 사용자는 불필요한 자신의 식자재를 공유할 수 있다. 해당 서비스는 식자재를 쉽게 공유할 수 있는 공간을 형성함으로써 식자재의 낭비를 막아 음식물 쓰레기 문제를 개선하는 것을 목적으로 한다.</p></div>
+			<div class="border">　</div>
+		<div class="background">
+		<h5>Background</h5>
+		<div class="project-image2"></div>
+		</div>
+		<div class="border">　</div>
+		<div class="designconcept">
+		<h5>Design concept</h5>
+		<div class="project-image3"></div>
+		</div>
+		<div class="border">　</div>
+		<div class="designconcept">
+		<h5>Prototype</h5>
+		<div class="project-image4"></div>
+		<div class="project-image5"></div>
+		</div>
+		<div class="border">　</div>
+		<div class="footer">
+		<div class="link">
+		<a href="https://www.facebook.com/profile.php?id=100003485697880" target="_black"><img src="image/facebook.png"></a>
+			<a href="https://www.instagram.com/feelsobreezy_/?hl=ko" target="_black"><img src="image/insta.png"></a>
+			<a href="https://twitter.com" target="_black"><img src="image/twitter.png"></a></div>
+			<p class="footer">Copyright©2019 Sunyoung Choi. All rights reserved.</p>
+		</div>
+</body>
+</html>
